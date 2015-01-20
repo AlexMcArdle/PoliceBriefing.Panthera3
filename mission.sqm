@@ -57,7 +57,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="officer_1";
-					init="removeallweapons this; removeallitems this; removebackpack this; removevest this; this unassignitem ""NVGoggles""; this removeItem ""NVGoggles"" ;";
+					init="removeallweapons this; removeallitems this; removebackpack this; removevest this; this unassignitem ""NVGoggles""; this removeItem ""NVGoggles"" ; _null = execVM ""init_cop.sqf""";
 				};
 			};
 		};

@@ -1,2 +1,2 @@
-sleep 5;
+waitUntil {!isNull player};
 hint "Mission Initialized";
