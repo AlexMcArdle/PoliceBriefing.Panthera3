@@ -7,7 +7,7 @@ hint "Cop Init Complete";
 */
 
 //do cop shit
-//todo: attached to gearbelt
+//todo: attached to gearbelt object "V_Rangemaster_belt"
 player setVariable ["hasGearBelt", 1];
 _actionRadio = player addAction ["<t color='#FF0000'>(Radio)</t>", "scripts/gearbelt.sqf"];
 
