@@ -3,10 +3,10 @@ class Mission
 {
 	addOns[]=
 	{
+		"a3_map_panthera3",
 		"A3_Characters_F_EPA",
-		"a3_map_stratis",
-		"A3_Soft_F_Offroad_01",
 		"A3_Soft_F_Gamma_Offroad",
+		"a3_soft_f_offroad_01",
 		"A3_Weapons_F_Ammoboxes"
 	};
 	addOnsAuto[]=
@@ -15,9 +15,9 @@ class Mission
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
 		"A3_Weapons_F_Ammoboxes",
-		"a3_map_stratis"
+		"a3_map_panthera3"
 	};
-	randomSeed=4778261;
+	randomSeed=15412732;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -28,10 +28,10 @@ class Mission
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
+		year=2014;
+		month=6;
+		day=24;
+		hour=18;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
@@ -47,8 +47,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3035.6892,4.1171908,6031.7266};
-					azimut=-95.782501;
+					position[]={4958.1694,3.0899999,7810.5581};
+					azimut=-147.881;
 					special="NONE";
 					id=0;
 					side="WEST";
@@ -69,7 +69,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3041.304,3.3813863,6017.8584};
+					position[]={4960.9224,3.0899999,7809.231};
+					azimut=-140.33701;
 					special="NONE";
 					id=1;
 					side="WEST";
@@ -88,8 +89,8 @@ class Mission
 		items=3;
 		class Item0
 		{
-			position[]={3043.5125,3.6471014,6023.5127};
-			azimut=-5.979023;
+			position[]={4969.6567,3.0899999,7803.501};
+			azimut=-147.2518;
 			special="NONE";
 			id=2;
 			side="EMPTY";
@@ -101,8 +102,8 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={3034.8513,3.3567765,6007.8594};
-			azimut=-92.206039;
+			position[]={4973.7251,3.0899999,7800.8564};
+			azimut=-144.30449;
 			special="NONE";
 			id=3;
 			side="EMPTY";
@@ -114,8 +115,8 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={3033.1748,4.0387816,6031.4438};
-			azimut=-102.816;
+			position[]={4957.0449,3.0899999,7807.6118};
+			azimut=-154.91446;
 			special="NONE";
 			id=4;
 			side="EMPTY";
@@ -130,13 +131,13 @@ class Intro
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"a3_map_panthera3"
 	};
 	addOnsAuto[]=
 	{
-		"a3_map_stratis"
+		"a3_map_panthera3"
 	};
-	randomSeed=2197977;
+	randomSeed=1736677;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -147,10 +148,10 @@ class Intro
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
+		year=2014;
+		month=6;
+		day=24;
+		hour=18;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
@@ -160,13 +161,13 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"a3_map_panthera3"
 	};
 	addOnsAuto[]=
 	{
-		"a3_map_stratis"
+		"a3_map_panthera3"
 	};
-	randomSeed=10475845;
+	randomSeed=11005558;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -177,10 +178,10 @@ class OutroWin
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
+		year=2014;
+		month=6;
+		day=24;
+		hour=18;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
@@ -190,13 +191,13 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"a3_map_stratis"
+		"a3_map_panthera3"
 	};
 	addOnsAuto[]=
 	{
-		"a3_map_stratis"
+		"a3_map_panthera3"
 	};
-	randomSeed=16528727;
+	randomSeed=14978587;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -207,10 +208,10 @@ class OutroLoose
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2035;
-		month=7;
-		day=6;
-		hour=12;
+		year=2014;
+		month=6;
+		day=24;
+		hour=18;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
