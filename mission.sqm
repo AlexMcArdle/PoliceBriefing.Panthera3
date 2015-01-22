@@ -7,14 +7,18 @@ class Mission
 		"A3_Characters_F_EPA",
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
-		"A3_Weapons_F_Ammoboxes"
+		"A3_Weapons_F_Ammoboxes",
+		"A3_Characters_F_EPC",
+		"A3_Soft_F_Truck"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_EPA",
+		"A3_Characters_F_EPC",
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
 		"A3_Weapons_F_Ammoboxes",
+		"A3_Soft_F_Truck",
 		"a3_map_panthera3"
 	};
 	randomSeed=15412732;
@@ -38,7 +42,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=2;
+		items=5;
 		class Item0
 		{
 			side="WEST";
@@ -83,16 +87,74 @@ class Mission
 				};
 			};
 		};
+		class Item2
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4987.979,3.0899999,7794.1709};
+					azimut=-145.955;
+					id=2;
+					side="CIV";
+					vehicle="C_scientist_F";
+					leader=1;
+					skill=0.60000002;
+					text="ems_1";
+					init="_nill = this execVM ""init_ems.sqf""; this moveindriver ems_truck_1";
+				};
+			};
+		};
+		class Item3
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4980.9648,3.0899999,7793.5723};
+					azimut=-145.955;
+					id=3;
+					side="CIV";
+					vehicle="C_scientist_F";
+					leader=1;
+					skill=0.60000002;
+					text="ems_2";
+				};
+			};
+		};
+		class Item4
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4984.814,3.0899999,7791.3477};
+					azimut=-145.955;
+					id=4;
+					side="CIV";
+					vehicle="C_scientist_F";
+					leader=1;
+					skill=0.60000002;
+					text="ems_3";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={4969.6567,3.0899999,7803.501};
 			azimut=-147.2518;
 			special="NONE";
-			id=2;
+			id=5;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_F";
 			leader=1;
@@ -105,7 +167,7 @@ class Mission
 			position[]={4973.7251,3.0899999,7800.8564};
 			azimut=-144.30449;
 			special="NONE";
-			id=3;
+			id=6;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_F";
 			leader=1;
@@ -118,12 +180,22 @@ class Mission
 			position[]={4957.0449,3.0899999,7807.6118};
 			azimut=-154.91446;
 			special="NONE";
-			id=4;
+			id=7;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			leader=1;
 			skill=0.60000002;
 			init="clearWeaponCargoGlobal this; clearItemCargoGlobal this; clearBackpackCargoGlobal this; clearMagazineCargo this; this addItemCargo [""V_Rangemaster_belt"", 50]";
+		};
+		class Item3
+		{
+			position[]={4979.9771,3.0899999,7797.1421};
+			azimut=-145.955;
+			id=8;
+			side="EMPTY";
+			vehicle="C_Van_01_box_F";
+			skill=0.60000002;
+			text="ems_truck_1";
 		};
 	};
 };

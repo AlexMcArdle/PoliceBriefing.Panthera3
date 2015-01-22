@@ -9,7 +9,7 @@ hint "Cop Init Complete";
 //do cop shit
 //todo: attach to gearbelt object "V_Rangemaster_belt"
 player setVariable ["hasGearBelt", 1];
-actionRadio = player addAction ["<t color='#FF0000'>(Radio)</t>", "scripts\gearbelt.sqf", ["radio",actionRadio], 10, false, true, "", "vest _this == 'V_Rangemaster_belt'"];
+action_radio = player addAction ["<t color='#FF0000'>(Radio)</t>", "scripts\gearbelt.sqf", "radio", 10, false, true, "", "vest _this == 'V_Rangemaster_belt'"];
 
 
 
