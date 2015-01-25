@@ -9,12 +9,18 @@ class Mission
 		"a3_soft_f_offroad_01",
 		"A3_Weapons_F_Ammoboxes",
 		"A3_Characters_F_EPC",
-		"A3_Soft_F_Truck"
+		"A3_Soft_F_Truck",
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"A3_Characters_F_BLUFOR"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Characters_F_EPA",
 		"A3_Characters_F_EPC",
+		"A3_Characters_F_Civil",
+		"a3_characters_f",
+		"A3_Characters_F_BLUFOR",
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
 		"A3_Weapons_F_Ammoboxes",
@@ -42,7 +48,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=5;
+		items=10;
 		class Item0
 		{
 			side="WEST";
@@ -145,6 +151,115 @@ class Mission
 				};
 			};
 		};
+		class Item5
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4950.9609,3.0899999,7813.5967};
+					azimut=-141.19;
+					special="NONE";
+					id=5;
+					side="CIV";
+					vehicle="C_man_shorts_1_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_4";
+					init="_nill = this execVM ""init_civ.sqf"";";
+				};
+			};
+		};
+		class Item6
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4943.1875,3.0899999,7819.187};
+					azimut=-141.19;
+					special="NONE";
+					id=6;
+					side="CIV";
+					vehicle="C_man_shorts_1_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_1";
+					init="_nill = this execVM ""init_civ.sqf"";";
+				};
+			};
+		};
+		class Item7
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4945.8579,3.0899999,7817.2251};
+					azimut=-141.19;
+					special="NONE";
+					id=7;
+					side="CIV";
+					vehicle="C_man_shorts_1_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_2";
+					init="_nill = this execVM ""init_civ.sqf"";";
+				};
+			};
+		};
+		class Item8
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4948.7104,3.0899999,7815.1841};
+					azimut=-141.19;
+					special="NONE";
+					id=8;
+					side="CIV";
+					vehicle="C_man_shorts_1_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="civ_3";
+					init="_nill = this execVM ""init_civ.sqf"";";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4963.2622,3.0899999,7807.4243};
+					azimut=-141.19;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="B_officer_F";
+					leader=1;
+					skill=0.60000002;
+					text="dispatch";
+					init="removeAllWeapons this; (group this) setGroupId [""Central""]";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -154,7 +269,7 @@ class Mission
 			position[]={4969.6567,3.0899999,7803.501};
 			azimut=-147.2518;
 			special="NONE";
-			id=5;
+			id=10;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_F";
 			leader=1;
@@ -167,7 +282,7 @@ class Mission
 			position[]={4973.7251,3.0899999,7800.8564};
 			azimut=-144.30449;
 			special="NONE";
-			id=6;
+			id=11;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_F";
 			leader=1;
@@ -180,7 +295,7 @@ class Mission
 			position[]={4957.0449,3.0899999,7807.6118};
 			azimut=-154.91446;
 			special="NONE";
-			id=7;
+			id=12;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			leader=1;
@@ -191,7 +306,7 @@ class Mission
 		{
 			position[]={4979.9771,3.0899999,7797.1421};
 			azimut=-145.955;
-			id=8;
+			id=13;
 			side="EMPTY";
 			vehicle="C_Van_01_box_F";
 			skill=0.60000002;

@@ -4,10 +4,16 @@ _emsList = [ems_1, ems_2, ems_3];
 {
 	if !(_x getVariable "isBusy") exitWith {
 		_x setVariable ["isBusy", true, true];
-		hint "on my way";
+		
+		// re doesnt work in singleplayer
+		if(!isServer) then {
+			[dispatch, nil, rSIDECHAT, "EMS has been dispatched to your location"] call RE;
+		}
+		else {
+			dispatch sideChat "EMS has been dispatched to your location";
+		};
 		_x doMove (getpos _this);
 		waitUntil {moveToCompleted _x};
-		hint "im here brah";
 		
 		//time to heal him
 		//
